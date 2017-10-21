@@ -1,0 +1,25 @@
+function draw(){
+    fill(255) 
+    noStroke()
+    rect(0, 700, 1100, 150)
+    
+    ellipse(550, 600, 225, 225)
+    ellipse(550, 425, 175, 175)
+    ellipse(550, 300, 100, 100)
+    
+    // eyes
+    fill(0)
+    ellipse(535, 281, 8, 8);
+    ellipse(566, 281, 8, 8);
+    // buttons
+    fill(255, 255, 2)
+    ellipse(550, 378, 20, 20)
+    ellipse(550, 424, 20, 20)
+    ellipse(550, 470, 20, 20)
+    // carrot nose
+    fill(255, 150, 0)
+    ellipse(550, 295, 8, 8)
+    // right arm
+    rect(600, 400
+    // left arm    
+}
