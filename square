@@ -1,0 +1,45 @@
+import fluo
+
+def setup():
+    size(400, 400)
+    global angle 
+    angle = 0
+
+
+    
+    
+def draw():
+    global angle
+    background(0)
+    #stroke(0, 0, 255)
+    stroke(random(255), random(255), random(255))
+    strokeWeight(2)
+    
+    translate(width/2, height/2)
+    fluo.showGrid()
+    #line(width/3, height/2, width*2/3, height/2)
+    #line(-50, 0, 50, 0)
+    #line(50, 0, 50, 100)
+    
+    rotate(radians(angle))
+    moveForward(50, 0, RIGHT)
+    moveForward(50, 0, DOWN)
+    moveForward(50, 100, LEFT)
+    moveForward(-50, 100, UP)
+    angle = angle + 1
+    
+    
+    
+    
+def moveForward(x, y, dir=RIGHT):
+    if (dir == UP):
+        #move up
+        line(x, y, x, y - 100)
+        # moving right
+        line(x, y, x + 100, y)
+    elif (dir == DOWN):
+        # moving down
+        line(x, y, x, y + 100)
+    else: 
+        # moving left
+        line(x, y, x - 100, y)
