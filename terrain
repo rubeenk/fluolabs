@@ -1,0 +1,40 @@
+t = 0
+
+t3 = 0
+
+t4 = 0
+
+def setup():
+    size(600, 600)
+                
+def draw():
+    global t, t3, t4
+    background(0)
+    # first circle
+    ellipse(random(width), height/5, 40, 40)  
+    
+    
+    # second circle
+    x = noise(t)
+    x = map(x, 0, 1, 0, width)
+    
+    
+    ellipse(x, height*2/5, 40, 40)   
+    t += 1
+    
+    # third circle
+    x3 = noise(t3)
+    x3 = map(x3, 0, 1, 0, width)
+    
+    
+    ellipse(x3, height*3/5, 40, 40)   
+    t3 += 0.1
+    
+    # fourth circle
+    x4 = noise(t4)
+    x4 = map(x4, 0, 1, 0, width)
+    
+    
+    ellipse(x4, height*4/5, 40, 40)   
+    t4 += .01
+    
