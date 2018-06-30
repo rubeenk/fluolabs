@@ -1,0 +1,30 @@
+# setup function runs only once at the beginning of the sketch 
+def setup():
+    size(680, 580)
+    fill(148, 218, 247)
+    stroke(random(255))
+    rect(26,56,63,69)
+    ellipse(383,91,80,80)
+    rect(67,416,146,145)
+    ellipse(278,387,80,80)
+    triangle(67,418,214,418,296,97)
+    fill(231,62,141)
+    stroke(231,62,141)
+    rect(344,497,40,60)
+    rect(-3,2,133,138)
+    rect(217,496,40,60)
+    rect(146,497,40,60)
+    rect(279,494,40,60)
+    triangle(281,432,219,494,382,495)
+    bezier(353,372,278,362,358,442,283,432)
+    bezier(195,427,227,384,307,464,287,411)
+    bezier(385,317,310,307,390,387,315,377)
+    bezier(125,383,200,340,181,466,252,411)
+    bezier(440,123,365,113,445,193,370,183)
+    ellipse(348,256,60,40)
+  
+
+
+# draw function repeats over and over again, 60 times a second 
+def draw():
+  print(mouseX, mouseY)
